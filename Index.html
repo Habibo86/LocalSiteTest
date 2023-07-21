@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ar-sy">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!--- Cairo Fonts--->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <!-- Icons-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!---Custom CSS--->
+    <link rel="stylesheet" href="CSS/styles.css" />
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <!--header-->
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+
+            <div class="header-left">
+                <span class="material-symbols-outlined">search</span>
+            </div>
+
+            <div class="header-right">
+                <span class="material-symbols-outlined">notifications</span>
+                <span class="material-symbols-outlined">mail</span>
+                <span class="material-symbols-outlined">account_circle</span>
+            </div>
+        </header>
+        <!--End header-->
+        <!--sidebar-->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <img class="Asourialogo" src="images\AsouriaCr2.png" alt="Logo" />
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    خرائط تفاعلية <span class="material-symbols-outlined">location_on</span>
+                </li>
+                <li class="sidebar-list-item">
+                    تقارير ومؤشرات ومخططات بيانية <span class="material-symbols-outlined">monitoring</span>
+                </li>
+                <li class="sidebar-list-item">
+                    المشاريع القائمة <span class="material-symbols-outlined">engineering</span>
+                </li>
+                <li class="sidebar-list-item">
+                    القوانين والأنظمة الداخلية <span class="material-symbols-outlined">subject</span>
+                </li>
+                <li class="sidebar-list-item">
+                    تعليمات السلامة المهنية <span class="material-symbols-outlined">health_and_safety</span>
+                </li>
+                <li class="sidebar-list-item">
+                    شؤون الموظفين <span class="material-symbols-outlined">badge</span>
+                </li>
+                <li class="sidebar-list-item">
+                    دليل الهاتف في الشركات <span class="material-symbols-outlined">deskphone</span>
+                </li>
+            </ul>
+        </aside>
+        <!--End Sidebar-->
+        <!--main-->
+        <main class="main-container">
+            <div class="main-cards">
+                <!--اراء-->
+                <div class="card">
+                    <div class="card-inner">
+                        <img class="Asourialogo" src="images\Araa.jpg" alt="Logo" />
+                    </div>
+                </div>
+
+                <!--الإعماري-->
+                <div class="card">
+                    <div class="card-inner">
+                        <img class="Asourialogo" src="images\ModernCo2.jpg" alt="Logo" />
+                    </div>
+                </div>
+
+                <!--منارات-->
+                <div class="card">
+                    <div class="card-inner">
+                        <img class="Asourialogo" src="images\Manarat.jpg" alt="Logo" />
+                    </div>
+                </div>
+
+                <!--القاهر-->
+                <div class="card">
+                    <div class="card-inner">
+                        <img class="Asourialogo" src="images\Kaher.png" alt="Logo" />
+                    </div>
+                </div>
+
+                <!--الداما-->
+                <div class="card">
+                    <div class="card-inner">
+                        <img class="Asourialogo" src="images\Dama.jpg" alt="Logo" />
+                    </div>
+                </div>
+
+                <!--المقاولون المتحدون-->
+                <div class="card">
+                    <div class="card-inner">
+                        <img class="Asourialogo" src="images\united.jpg" alt="Logo" />
+                    </div>
+                </div>
+            </div>
+            <hr />
+            
+            <div class="charts">
+
+                <div class="charts-card1">
+                    <p class="chart-title">مصفوفة مقاسم آاسوريا <br />
+                        حسب حجم العمل المتوقع</p>
+                    <div id="Treemap"></div>
+                </div>
+
+                <div class="charts-card2">
+                    <p class="chart-title">نسب هدر البيتون1</p>
+                    <div id="bar-chart"></div>
+                </div>
+
+                <div class="charts-card3">
+                    <p class="chart-title">نسب هدر البيتون2</p>
+                    <div id="area-chart"></div>
+                </div>
+
+
+            </div>
+</main>
+        <!--End main-->
+    </div>
+
+    <!---Scripts-->
+    <!--ApexCharts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.41.0/apexcharts.min.js">
+
+
+    </script>
+    
+
+
+    <script src="JS/scripts.js"></script>
+</body>
+</html>
